@@ -1,0 +1,278 @@
+package org.apache.jsp;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+import javax.servlet.jsp.*;
+
+public final class studenthome1_jsp extends org.apache.jasper.runtime.HttpJspBase
+    implements org.apache.jasper.runtime.JspSourceDependent {
+
+  private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
+
+  private static java.util.List<String> _jspx_dependants;
+
+  private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
+
+  public java.util.List<String> getDependants() {
+    return _jspx_dependants;
+  }
+
+  public void _jspService(HttpServletRequest request, HttpServletResponse response)
+        throws java.io.IOException, ServletException {
+
+    PageContext pageContext = null;
+    HttpSession session = null;
+    ServletContext application = null;
+    ServletConfig config = null;
+    JspWriter out = null;
+    Object page = this;
+    JspWriter _jspx_out = null;
+    PageContext _jspx_page_context = null;
+
+    try {
+      response.setContentType("text/html");
+      pageContext = _jspxFactory.getPageContext(this, request, response,
+      			null, true, 8192, true);
+      _jspx_page_context = pageContext;
+      application = pageContext.getServletContext();
+      config = pageContext.getServletConfig();
+      session = pageContext.getSession();
+      out = pageContext.getOut();
+      _jspx_out = out;
+      _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
+
+      out.write("<html>\n");
+      out.write("<head>\n");
+      out.write("     \n");
+      out.write("<script>\n");
+      out.write("$(document).ready(function() {\n");
+      out.write("\n");
+      out.write("  $('.link').on('click', function(e){\n");
+      out.write("    \n");
+      out.write("    var hash = $(this).attr('href');\n");
+      out.write("     $('html,body').animate({\n");
+      out.write("       scrollTop: $(hash).offset().top\n");
+      out.write("     }, 800);\n");
+      out.write("    \n");
+      out.write("    return false;\n");
+      out.write("  });\n");
+      out.write("})\n");
+      out.write("\n");
+      out.write("    \n");
+      out.write("</script>\n");
+      out.write("<style>\n");
+      out.write("    hr {\n");
+      out.write("  border:none;\n");
+      out.write("  height: 20px;\n");
+      out.write(" \twidth: 30%;\n");
+      out.write("\theight: 50px;\n");
+      out.write("\tmargin-top: 0;\n");
+      out.write("\tborder-bottom: 1px solid #1f1209;\n");
+      out.write("\tbox-shadow: 0 20px 20px -20px #333;\n");
+      out.write("  margin: -50px auto -100px; \n");
+      out.write("  padding-bottom: 10px;\n");
+      out.write("}\n");
+      out.write("html, body {\n");
+      out.write("margin:0px; padding:0px;\n");
+      out.write("}\n");
+      out.write("\n");
+      out.write(".nav {\n");
+      out.write("  width: 100%;\n");
+      out.write("  position: fixed;\n");
+      out.write("  top: 0;\n");
+      out.write("  left: 0;\n");
+      out.write(" background:#414142  ;\n");
+      out.write("padding-left:500px;\n");
+      out.write("   \n");
+      out.write("\n");
+      out.write("}\n");
+      out.write("\n");
+      out.write(".nav li {\n");
+      out.write("  list-style: none;\n");
+      out.write("  text-align:center;\n");
+      out.write("  display: inline-block;\n");
+      out.write("  margin-top:3px;\n");
+      out.write("  padding-right:10px;\n");
+      out.write("  \n");
+      out.write("}\n");
+      out.write(".nav .link:hover{color:white;}\n");
+      out.write("\n");
+      out.write(".nav .link {\n");
+      out.write("\n");
+      out.write("  text-decoration: none;\n");
+      out.write("  font-size: 17px;\n");
+      out.write("  font-family: Calibri;\n");
+      out.write("  color:#A8A9A9 ;\n");
+      out.write("  margin: 0 10px;\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("}\n");
+      out.write("\n");
+      out.write(".blocks {\n");
+      out.write("  width: 100%;\n");
+      out.write("  min-height: 100%;\n");
+      out.write("  overflow: hidden;\n");
+      out.write("\n");
+      out.write("}\n");
+      out.write("\n");
+      out.write(".blocks:nth-child(1) {\n");
+      out.write("\n");
+      out.write(" \n");
+      out.write("}\n");
+      out.write(".blocks:nth-child(2) {\n");
+      out.write(" background:url(\"images/slider/bg8edit.jpg\") ;\n");
+      out.write("  background-position: center;\n");
+      out.write("  \n");
+      out.write("    background-repeat: no-repeat;\n");
+      out.write("    background-size: cover;\n");
+      out.write("transition:all 0.5s;\n");
+      out.write("}\n");
+      out.write(".blocks:nth-child(3) {\n");
+      out.write("  background:url(\"images/slider/6833.jpg\");\n");
+      out.write("  color:-50%;\n");
+      out.write("    background-position: center;\n");
+      out.write("    background-repeat: no-repeat;\n");
+      out.write("    background-size: cover;\n");
+      out.write("  transition:all 0.5s;\n");
+      out.write("    }\n");
+      out.write(".blocks:nth-child(4) {\n");
+      out.write("  background:url(\"images/slider/bg3.jpg\") ;\n");
+      out.write("    background-position: center;\n");
+      out.write("    background-repeat: no-repeat;\n");
+      out.write("    background-size: cover;\n");
+      out.write("}\n");
+      out.write(".blocks:nth-child(5) {\n");
+      out.write("  background:url(\"images/slider/edit.jpg\") ;\n");
+      out.write("    background-position: center;\n");
+      out.write("    background-repeat: no-repeat;\n");
+      out.write("    background-size: cover;\n");
+      out.write("}\n");
+      out.write(".blocks:nth-child(6) {\n");
+      out.write("  background:url(\"images/slider/bg7e.jpg\") ;\n");
+      out.write("    background-position: center;\n");
+      out.write("    background-repeat: no-repeat;\n");
+      out.write("    background-size: cover;\n");
+      out.write("}\n");
+      out.write(".blocks:nth-child(7) {\n");
+      out.write("      background:url(\"images/slider/bg3.jpg\") ;\n");
+      out.write("    background-position: center;\n");
+      out.write("    background-repeat: no-repeat;\n");
+      out.write("    background-size: cover;\n");
+      out.write("}\n");
+      out.write("        <!--\n");
+      out.write(".style1 {color: #000099}\n");
+      out.write(".style2 {color: #000000}\n");
+      out.write(".style3 {color: #0000CC}\n");
+      out.write("-->\n");
+      out.write("\n");
+      out.write("</style>\n");
+      out.write("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\n");
+      out.write("        <link rel=\"stylesheet\" type=\"text/css\" href=\"css/style.css\">\n");
+      out.write("        <link href=\"css/js-image-slider.css\" rel=\"stylesheet\" type=\"text/css\" />\n");
+      out.write("    <script src=\"js/js-image-slider.js\" type=\"text/javascript\"></script>\n");
+      out.write("      <link href=\"css/menu.css\" rel=\"stylesheet\" type=\"text/css\" />\n");
+      out.write("      <link rel=\"shortcut icon\" type=\"image/x-icon\" href=\"images/favicon.ico\">\n");
+      out.write("</head>\n");
+      out.write("<body>\n");
+      out.write("     <div class=\"container\">\n");
+      out.write("      <div class=\"header\" style=\"position:fixed;background:#414142;\" >\n");
+      out.write("        <div class=\"head\">\n");
+      out.write("           <!-- head left begins-->\n");
+      out.write("             <div class=\"headleft\" >\n");
+      out.write("              <a href=\"index.html\" style=\"height:auto;width:auto;margin-left:-60px; \"><img src=\"images/slider/logo3.png\" /></a>\n");
+      out.write("             </div>\n");
+      out.write("           <!-- head left ends-->\n");
+      out.write("          \n");
+      out.write("          <!-- head right begins-->\n");
+      out.write("          <div class=\"headright\">\n");
+      out.write("          <!-- head top begins-->\n");
+      out.write("           <div class=\"headtop\">\n");
+      out.write("               <!-- contact begins-->\n");
+      out.write("               \n");
+      out.write("             <!-- contact ends-->\n");
+      out.write("            <!-- contact begins-->\n");
+      out.write("           <div class=\"contact\">\n");
+      out.write("                <a href=\"index.html\"><img src=\"images/login.png\" /></a>\n");
+      out.write("              <a href=\"index.html\"> <p>Logout</p></a> \n");
+      out.write("          </div>\n");
+      out.write("         <!-- contact ends-->\n");
+      out.write("        </div>\n");
+      out.write("      <!-- head top ends-->\n");
+      out.write("      <!-- head bottom begins-->\n");
+      out.write("        <div class=\"headbottom\">\n");
+      out.write("           <!-- menu begins-->\n");
+      out.write("            <div class=\"menu\">\n");
+      out.write("               <ul id=\"nav\">\n");
+      out.write("        <li><a href=\"#bloco1\" class=\"link\"><b>Home</b></a></li>\n");
+      out.write("    <li><a href=\"#bloco2\" class=\"link\"><b>Placements</b></a></li>\n");
+      out.write("    <li><a href=\"#bloco3\" class=\"link\"><b>Books</b></a></li>\n");
+      out.write("\t<li><a href=\"#bloco4\" class=\"link\"><b>workshops/conferences</b></a></li>\n");
+      out.write("\t<li><a href=\"#bloco5\" class=\"link\"><b>useful websites</b></a></li>\n");
+      out.write("        <li><a href=\"#bloco6\" class=\"link\"><b>Todo</b></a></li>\n");
+      out.write("        </ul> \n");
+      out.write("        </div>\n");
+      out.write("      <!-- menu ends-->\n");
+      out.write("        </div>\n");
+      out.write("      <!-- head bottom ends-->\n");
+      out.write("          </div>\n");
+      out.write("         <!-- head right ends-->\n");
+      out.write("         <div class=\"clear\"></div>\n");
+      out.write("        </div>\n");
+      out.write("      </div>\n");
+      out.write("   \n");
+      out.write("\n");
+      out.write("<div class=\"blocks\" id=\"bloco1\">\n");
+      out.write("    <div class=\"page1\">\n");
+      out.write("        <div style=\"margin:225px auto auto;color:#303030;text-shadow: 0px 0px 6px grey; font-size:70px; text-align:center;font-family:TimeBurner;\" ><a href=\"\" style=\"color:#303030\"><b>WELCOME<BR> TO<BR> STUDENT ACADEMY</b><HR></a>\n");
+      out.write("            <h6 style=\" color: black\"><b><center>WELCOME ");
+      out.print( session.getAttribute("theName") );
+      out.write("</center></b></h6>\n");
+      out.write("</div>\n");
+      out.write("        \n");
+      out.write("    </div>\n");
+      out.write("         \n");
+      out.write("\n");
+      out.write("  </div>\n");
+      out.write("         <div class=\"blocks\"  id=\"bloco2\" > <div style=\"margin:200px auto auto;color:#303030;text-shadow: 0px 0px 6px grey; font-size:70px; text-align:center;font-family:TimeBurner;\" ><a href=\"placeselect.html\" style=\"color:#303030\"><b>APPLY<BR> FOR<BR> PLACEMENTS</b><HR><br><text style=\"font-size:40px\">here<text></a>\n");
+      out.write("                 \n");
+      out.write("</div>\n");
+      out.write("         </div>\n");
+      out.write("<div class=\"blocks\" id=\"bloco3\">  \n");
+      out.write("    <div style=\"margin:200px auto auto;color:#303030;text-shadow: 0px 0px 6px grey; font-size:70px; text-align:center;font-family:TimeBurner;\" ><a href=\"bookselect.html\" style=\"color:#303030\"><b>SEARCH<BR> FOR<BR> BOOKS</b><HR><br><text style=\"font-size:40px\">here<text></a>\n");
+      out.write("</div>\n");
+      out.write("</div>\n");
+      out.write("<div class=\"blocks\" id=\"bloco4\">\n");
+      out.write("    <div style=\"margin:150px auto auto;color:#303030;text-shadow: 0px 0px 6px grey; font-size:70px; text-align:center;font-family:TimeBurner;\" ><a href=\"wandc.jsp\" style=\"color:#303030\"><b>VIEW<BR>WORKSHOPS<BR> AND<BR> CONFERENCES</b><HR><br><text style=\"font-size:40px\">here<text></a>\n");
+      out.write("</div>\n");
+      out.write("    \n");
+      out.write("</div>\n");
+      out.write("         <div class=\"blocks\" id=\"bloco5\">\n");
+      out.write("              <div style=\"margin:150px auto auto;color:#303030;text-shadow: 0px 0px 6px grey; font-size:70px; text-align:center;font-family:TimeBurner;\" ><a href=\"stuwebsites.jsp\" style=\"color:#303030\"><b>VIEW<BR>USEFUL<BR> WEBSITES</b><HR><br><text style=\"font-size:40px\">here<text></a>\n");
+      out.write("</div>\n");
+      out.write("         </div>\n");
+      out.write("<div class=\"blocks\" id=\"bloco6\">\n");
+      out.write("    <div style=\"margin:150px auto auto;color:#303030;text-shadow: 0px 0px 6px grey; font-size:70px; text-align:center;font-family:TimeBurner;\" ><a href=\"\" style=\"color:#303030\"><b>VIEW<BR>YOUR<BR> TO DO<BR> SCHEDULE</b><HR><br><text style=\"font-size:40px\">here<text></a>\n");
+      out.write("</div>\n");
+      out.write("    \n");
+      out.write("</div>\n");
+      out.write("     \n");
+      out.write("     \n");
+      out.write("     \n");
+      out.write("     \n");
+      out.write("     \n");
+      out.write("     </div>\n");
+      out.write("</body>\n");
+      out.write("\n");
+    } catch (Throwable t) {
+      if (!(t instanceof SkipPageException)){
+        out = _jspx_out;
+        if (out != null && out.getBufferSize() != 0)
+          out.clearBuffer();
+        if (_jspx_page_context != null) _jspx_page_context.handlePageException(t);
+        else throw new ServletException(t);
+      }
+    } finally {
+      _jspxFactory.releasePageContext(_jspx_page_context);
+    }
+  }
+}
